@@ -46,18 +46,18 @@ p {
 }
 
 .info {
-    flex-wrap: wrap;
-    display: flex;
-    width: 1100px;
-    margin: 0px;
+    display: flex;              /* контейнер flex */
+    justify-content: center;    /* карточки по центру */
+    flex-wrap: wrap;            /* перенос на новую строку, если не влезают */
 }
 
 article {
     background-color: white;
-    padding: ;
-    margin: 20px;
+    padding: 20px;              /* отступы внутри карточки */
+    margin: 20px;               /* отступы снаружи */
     width: 400px;
-    margin: ;
+    border-radius: 16px;        /* закругление краёв */
+    overflow: hidden;           /* чтобы картинка не вылезала за скруглённые углы */
 }
 
 .article-but {
