@@ -1,52 +1,92 @@
-<html>
-    <head>
-        <title>BitMarket</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header>
-            <img src="https://learn.algoritmika.org/uploads/2021/02/logo_0_1613588860.svg">
-            <a class="button" href="">Скидки</a>
-        </header>
-        <nav>
-            <a class="nav-link" href="">Каталог</a>
-            <a class="nav-link" href="">Оптом</a>
-            <a class="nav-link" href="">Доставка</a>
-            <a class="nav-link" href="">Возврат товара</a>
-        </nav>
-        <main>
-            <h1>Профессионалы советуют</h1>
-            <section class="info">
-                <article>
-                    <h2>Лэптоп для отдыха</h2>
-                    <img src="https://learn.algoritmika.org/uploads/2021/02/notebook-405755_1920_0_1613586011.jpg" width="400px" height="300px">
-                    <p>Samsung V145-S</p>
-                    <a class="article-but" href="">Подробнее</a>
-                </article>
-                <article>
-                    <h2>Как выбрать наушники</h2>
-                    <img src="https://learn.algoritmika.org/uploads/2021/02/music-1813100_1280_0_1613586010.png" width="330px" height="300px">
-                    <p>Поговорим о новинках</p>
-                    <a class="article-but" href="">Подробнее</a>
-                </article>
-                <article>
-                    <h2>Телефон мечты</h2>
-                    <img src="https://learn.algoritmika.org/uploads/2021/02/mobile-phone-1875813_1920_0_1613586011.jpg" width="400px" height="300px">
-                    <p>Apple iphone 13</p>
-                    <a class="article-but" href="">Подробнее</a>
-                </article>
-                <article>
-                    <h2>Техника для всего</h2>
-                    <img src="https://learn.algoritmika.org/uploads/2021/02/laptop-1483974_1920_0_1613586010.jpg" width="400px" height="300px">
-                    <p>И целого мира мало...</p>
-                    <a class="article-but" href="">Подробнее</a>
-                </article>
-            </section>
-            <img src="https://learn.algoritmika.org/uploads/2021/02/mobile-phone-1419275_1920_0_1613586010.jpg" width="960" height="270">
-        </main>
-        <footer>
-            <a href=""><img src="https://learn.algoritmika.org/uploads/2021/02/Group%201_0_1613586391.png" width="80px" height="80px"></a>
-            <p><b>Напиши — получи<br> промокод!</b></p> 
-        </footer>
-    </body>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BitMarket — Каталог</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a href="index.html" class="logo-link">
+            <img src="https://learn.algoritmika.org/uploads/2021/02/logo_0_1613588860.svg" alt="Логотип BitMarket" width="150" height="40">
+        </a>
+        <a class="button" href="#discounts">Скидки</a>
+    </header>
+
+    <nav class="main-nav" aria-label="Основное меню">
+        <a class="nav-link" href="index.html">Главная</a>
+        <a class="nav-link" href="catalog.html">Каталог</a>
+        <a class="nav-link" href="#wholesale">Оптом</a>
+        <a class="nav-link" href="#delivery">Доставка</a>
+        <a class="nav-link" href="#returns">Возврат товара</a>
+    </nav>
+
+    <main class="container">
+        <h1 class="section-title">Каталог товаров</h1>
+
+        <section class="catalog">
+            <article class="card">
+                <img src="https://learn.algoritmika.org/uploads/2021/02/notebook-405755_1920_0_1613586011.jpg"
+                     alt="Ноутбук Samsung V145-S" loading="lazy">
+                <h2 class="card-title">Ноутбук Samsung V145-S</h2>
+                <p class="card-desc">Для отдыха и работы</p>
+                <p class="card-price">49 990 ₽</p>
+                <a class="article-but" href="#buy">В корзину</a>
+            </article>
+
+            <article class="card">
+                <img src="https://learn.algoritmika.org/uploads/2021/02/music-1813100_1280_0_1613586010.png"
+                     alt="Наушники" loading="lazy">
+                <h2 class="card-title">Наушники беспроводные</h2>
+                <p class="card-desc">С активным шумоподавлением</p>
+                <p class="card-price">9 490 ₽</p>
+                <a class="article-but" href="#buy">В корзину</a>
+            </article>
+
+            <article class="card">
+                <img src="https://learn.algoritmika.org/uploads/2021/02/mobile-phone-1875813_1920_0_1613586011.jpg"
+                     alt="Смартфон Apple iPhone 13" loading="lazy">
+                <h2 class="card-title">Смартфон Apple iPhone 13</h2>
+                <p class="card-desc">Телефон мечты</p>
+                <p class="card-price">79 990 ₽</p>
+                <a class="article-but" href="#buy">В корзину</a>
+            </article>
+
+            <article class="card">
+                <img src="https://learn.algoritmika.org/uploads/2021/02/laptop-1483974_1920_0_1613586010.jpg"
+                     alt="Ультрабук" loading="lazy">
+                <h2 class="card-title">Ультрабук Pro</h2>
+                <p class="card-desc">Техника для всего</p>
+                <p class="card-price">62 500 ₽</p>
+                <a class="article-but" href="#buy">В корзину</a>
+            </article>
+
+            <article class="card">
+                <img src="https://learn.algoritmika.org/uploads/2021/02/mobile-phone-1419275_1920_0_1613586010.jpg"
+                     alt="Смартфон" loading="lazy">
+                <h2 class="card-title">Смартфон Lite</h2>
+                <p class="card-desc">Всё необходимое и ничего лишнего</p>
+                <p class="card-price">19 990 ₽</p>
+                <a class="article-but" href="#buy">В корзину</a>
+            </article>
+
+            <article class="card">
+                <img src="https://learn.algoritmika.org/uploads/2021/02/notebook-405755_1920_0_1613586011.jpg"
+                     alt="Игровой ноутбук" loading="lazy">
+                <h2 class="card-title">Ноутбук Gaming X</h2>
+                <p class="card-desc">Мощный и быстрый</p>
+                <p class="card-price">89 990 ₽</p>
+                <a class="article-but" href="#buy">В корзину</a>
+            </article>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a href="mailto:promo@bitmarket.ru" class="footer-icon-link">
+            <img src="https://learn.algoritmika.org/uploads/2021/02/Group%201_0_1613586391.png" alt="Написать нам" width="80" height="80">
+        </a>
+        <p class="promo-text"><b>Напиши — получи<br> промокод!</b></p>
+    </footer>
+</body>
 </html>
